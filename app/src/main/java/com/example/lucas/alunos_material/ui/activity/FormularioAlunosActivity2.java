@@ -1,4 +1,4 @@
-package com.example.lucas.alunos_material.activity;
+package com.example.lucas.alunos_material.ui.activity;
 
 import android.content.Intent;
 import android.net.Uri;

@@ -3,7 +3,7 @@ package com.example.lucas.alunos_material.helper;
 import android.widget.EditText;
 
 import com.example.lucas.alunos_material.R;
-import com.example.lucas.alunos_material.activity.FormularioAlunosActivity2;
+import com.example.lucas.alunos_material.ui.activity.FormularioAlunosActivity2;
 import com.example.lucas.alunos_material.modelo.Curso;
 
 /**

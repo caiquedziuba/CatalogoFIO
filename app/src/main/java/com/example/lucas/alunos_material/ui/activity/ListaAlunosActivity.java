@@ -1,7 +1,6 @@
-package com.example.lucas.alunos_material.activity;
+package com.example.lucas.alunos_material.ui.activity;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
@@ -63,11 +62,13 @@ public class ListaAlunosActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                Curso alunoParaSerAlterado = (Curso) parent.getItemAtPosition(position);
+                /*Curso alunoParaSerAlterado = (Curso) parent.getItemAtPosition(position);
 
                 Intent visualizar = new Intent(ListaAlunosActivity.this, FormularioAlunosActivity2.class);
                 visualizar.putExtra("alunoSelecionado", alunoParaSerAlterado);
-                startActivity(visualizar);
+                startActivity(visualizar);*/
+                startActivity(new Intent(getApplicationContext(), CursoOP.class));
+
             }
         });
 
