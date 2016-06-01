@@ -1,32 +1,51 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="wrap_content"
+    android:padding="5dp" >
 
-    <TextView
-        android:id="@+id/nome_adapter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Aluno"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="#00796b" />
+    <!-- A CardView that contains a TextView -->
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        card_view:cardBackgroundColor="#FFF"
+        >
 
-    <ImageView
-        android:id="@+id/icon_tel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/nome_adapter"
-        android:src="@drawable/ic_phone_black_18dp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/telefone_adapter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/icon_tel"
-        android:layout_below="@+id/nome_adapter"
-        android:layout_marginLeft="5dp"
-        android:layout_toRightOf="@+id/icon_tel"
-        android:text="Telefone" />
+            <ImageView
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                android:src="@drawable/adm"/>
 
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/nomeCurso_adapter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:gravity="start"
+                android:maxLines="1"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/colorAccent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_alignParentBottom="true"
+                android:text="Nome do Curso"
+                android:textSize="21sp"/>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
 </RelativeLayout>

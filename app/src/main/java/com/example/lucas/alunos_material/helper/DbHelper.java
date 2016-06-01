@@ -5,13 +5,17 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
+import com.example.lucas.alunos_material.R;
+
+import java.sql.Blob;
+
 /**
  * Created by Lucas on 01/10/2015.
  */
 public class DbHelper extends SQLiteOpenHelper {
 
     private static final String NAME = "db_aluno";
-    private static final int VERSION = 8;
+    private static final int VERSION = 9;
 
     //Variaveis da tabela curso
     public static final String TAB_CURSO = "TAB_CURSO";
@@ -40,13 +44,16 @@ public class DbHelper extends SQLiteOpenHelper {
                     cordenadorCurso + " TEXT NOT NULL," +
                     palavraCordenador + " TEXT NOT NULL," +
                     palavraAluno + " TEXT NOT NULL," +
-                    caminhofoto + " TEXT " +
+                    caminhofoto + " BLOB " +
                     " );";
 
             db.execSQL(sql);
 
-            db.execSQL("INSERT INTO " + TAB_CURSO + "(" + campoNomeCurso + "," + tempoCurso + "," + descricaoCurso + "," + cordenadorCurso + "," + palavraCordenador + "," + palavraAluno + ")" +
-                    " VALUES ('Sistemas de Informação', '8 Semestres', 'TAL', 'DELFINO', 'Vem pra FIO', 'Nao quero');" );
+            db.execSQL("INSERT INTO " + TAB_CURSO + "(" + campoNomeCurso + "," + tempoCurso + "," + descricaoCurso + "," + cordenadorCurso + "," + palavraCordenador + "," + palavraAluno + "," + caminhofoto + ")" +
+                    " VALUES ('Sistemas de Informação', '8 Semestres', '"+ R.string.sistemas_informacao + "', ' SERGIO ROBERTO DELFINO', 'Vem pra FIO', 'Nao quero'," + R.drawable.ti + ");" );
+
+            db.execSQL("INSERT INTO " + TAB_CURSO + "(" + campoNomeCurso + "," + tempoCurso + "," + descricaoCurso + "," + cordenadorCurso + "," + palavraCordenador + "," + palavraAluno + "," +  caminhofoto + ")" +
+                    " VALUES ('Administração de Empresas', '8 Semestres', '"+ R.string.adm_empresas + "', 'Dr. Valdeir Rejanildo Vidrik', 'Vem pra FIO', 'Nao quero', " + R.drawable.adm1 + ");" );
             Log.i("INFO", "Tabela foi criada com suceso" );
         }catch (Exception e){
             Log.e("INFO", "Erro ao Criar tabela" + e.getMessage());

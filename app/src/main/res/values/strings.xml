@@ -1,8 +1,36 @@
 <resources>
-    <string name="app_name">Alunos</string>
+    <string name="app_name">Cursos FIO</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_formulario_alunos2">FormularioAlunosActivity2</string>
     <string name="title_activity_main">MainActivity</string>
+
+    <string name="sistemas_informacao">
+        "Apresentação\n\n"
+
+        "O curso de Bacharelado de Sistemas de Informação das Faculdades Integradas de Ourinhos visa contribuir com a formação de Recursos para o desenvolvimento científico e tecnológico na área da computação.\n"
+
+        "O curso oferece uma formação que capacita o profissional para a solução de problemas do mundo real, por meio da construção de modelos computacionais, da utilização da Tecnologia da Informação e de sua efetiva implementação para dar suporte à tomada de decisões nas organizações.\n\n"
+
+        "Duração\n"
+
+        "8 semestres.\n\n"
+
+        "Autorização e Reconhecimento de Curso\n"
+
+        "Portaria n.º 2887 de 14/12/2001;\n\n"
+
+        "Reconhecimento\n"
+
+        "Portaria nº 3945, de 14/04/2005"\n" "Renovada pela Portaria MEC/SERES nº286, de 21/12/2012.\n\n" "Coordenador do Curso\n" "Profº. Mestre Sérgio Roberto Delfino\n\n" "Sistemas de Informação -  Nota do CPC: 4/ CI das FIO: 4\n" "Conceito Preliminar de Curso (CPC) - Nota de 1 a 5\n" "Nota 4\n\n" "Conceito Institucional (CI) - Nota de 1 a 5\n" "Nota 4 \n\n" "Valor da Mensalidade do Curso de Bacharelado em Sistemas de Informação: \n" "Noturno R$ 623,90 \n" "Matutino: R$ 561,65 \n"
+
+    </string>
+
+    <string name="adm_empresas">
+        "Apresentação\n\n"
+
+        "O administrador é um especialista em planejamento e funcionamento de empresas com conhecimentos e habilidades abrangentes para tomar decisões e atuar como agente de mudança das organizações. É ele quem determina os objetivos, traça estratégias e políticas de trabalho, avalia os resultados e desenvolve programas modernos para tornar a empresa mais competitiva\n\n""Duração\n""8 semestres.\n\n""Autorização\n""Parecer nº 228, de 13/03/70 Decreto nº 66.585 de 18/05/70\n\n""Reconhecimento\n""Parecer nº 4102, de 05/12/74 Decreto nº 75.345 de 04/02/75\nRenovado pela Portaria MEC/SERES nº114, de 27/06/2012"\n\n""Coordenador do Curso\n""Prof. Dr. Valdeir Rejanildo Vidrik.\n\n"
+
+    </string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
